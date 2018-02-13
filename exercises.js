@@ -59,6 +59,7 @@ for(var i=0; i<presidents.length; i++){
 console.log("length: ", presidents.length);
 
 
+
 function leaders(person){
 
 	console.log('President ' + person + " was a great leader.");
@@ -74,6 +75,12 @@ Declare a variable named `stringOfNumbers` and assign its value to an empty stri
 
 Write a for-loop that concatenates a Number value into that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"*/
 
+/*var stringOfNumbers = "";
+
+for(var i=10; i<=20; i++){
+	
+}*/
+
 
 /* 5) Even Stevens
 Declare a variable named `evenNumArr` and assign its value to an empty array. 
@@ -81,6 +88,21 @@ Declare a variable named `evenNumArr` and assign its value to an empty array.
 Write a for-loop that will push even numbers to the `evenNumArr` array. We want to push 50 even even numbers starting from 0.
 Console.log your results.
 */
+
+var evenNumArr = [];
+var length = evenNumArr.length;
+
+
+for(var i=0; length<50; i++){
+
+	if(i%2 == 0){
+		evenNumArr.push(i);
+		length++;
+	}
+}
+
+console.log(evenNumArr);
+console.log("length: ", length);
 
 
 /* 6) Up the Odds
