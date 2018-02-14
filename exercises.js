@@ -220,7 +220,7 @@ Write a function that will iterate through the string value and return the longe
 */
 
 var topQuote = "I love dogs.";
-console.log("topQuote length: ", topQuote.length);
+//console.log("topQuote length: ", topQuote.length);
 var quoteArray = [];
 var word;
 var firstNum = 0;
@@ -231,20 +231,20 @@ function longestWord(phrase){
 	for(var i=0; i<phrase.length; i++){
 
 		if(phrase.charAt(i) === " "){
-			console.log("Space at: ", i);
+			//console.log("Space at: ", i);
 			secondNum = i;
 			word = phrase.slice(firstNum, secondNum);
-			console.log("word: ", word);
+			//console.log("word: ", word);
 			quoteArray.push(word);
-			console.log(quoteArray);
+			//console.log(quoteArray);
 			firstNum = secondNum +1;
 		}
 		else if(phrase.charAt(i) === "."){
 			secondNum = i;
 			word = phrase.slice(firstNum, secondNum);
-			console.log("word: ", word);
+			//console.log("word: ", word);
 			quoteArray.push(word);
-			console.log(quoteArray);
+			//console.log(quoteArray);
 		}
 	}
 
@@ -270,6 +270,7 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
    @return Datatype: Array
 
 */
+
 
 
 
