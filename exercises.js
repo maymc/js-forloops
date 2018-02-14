@@ -78,9 +78,9 @@ Write a for-loop that concatenates a Number value into that string on each itera
 var stringOfNumbers = "";
 
 for(var i=10; i<=20; i++){
-	
+	stringOfNumbers = stringOfNumbers + i;
 }
-
+console.log(stringOfNumbers);
 
 /* 5) Even Stevens
 Declare a variable named `evenNumArr` and assign its value to an empty array. 
