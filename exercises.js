@@ -156,6 +156,11 @@ nope
 turn
 */
 
+for(var i=oppsArray.length-1; i>=0; i--){
+
+	if(i !== 0)
+		console.log(oppsArray[i]);
+}
 
 /* 9) Siesta Time
 Declare a variable named `napSchedule` and assign its value to the following array: `[false, false, true, false, true, true]`
