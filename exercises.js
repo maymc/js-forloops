@@ -294,7 +294,26 @@ console.log(generateArrayOfStrings(miscStorage));
 Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the message: "I've Lived A Life That's Full. I've Traveled Each And Every Highway. But More, Much More Than This. I Did It My Way."  
 */
 
-var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
+var myWay = "i've lived a life that's full. i've traveled each and every highway. but more, much more than this. i did it my way.";
+
+myWayArray = myWay.split(" ");
+//console.log(myWayArray);
+
+function capitalize(arr){
+
+	for(var i=0; i<arr.length; i++){
+
+		var poppedWord = arr.shift();
+		//console.log(poppedWord);
+		var UpperPopped = poppedWord[0].toUpperCase() + poppedWord.slice(1);
+		//console.log(UpperPopped);
+		arr.push(UpperPopped);
+		//console.log(arr);
+	}
+}
+
+capitalize(myWayArray);
+console.log(myWayArray.join(" "));
 
 
 /* 14) Sightseeing
