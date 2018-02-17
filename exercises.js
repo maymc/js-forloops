@@ -219,7 +219,32 @@ Declare a variable named `topQuote` and assign it to a String value of your favo
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
 
-var topQuote = "I love dogs.";
+var topQuote = "Once a year go someplace you've never been before.";
+var count1 = 0;
+var count2 = 0;
+var longWordIndex;
+
+function longestWord(str){
+	quoteArray = str.split(" ");
+	//console.log(quoteArray);
+	//console.log(quoteArray.length);
+
+	for(var i=0; i<quoteArray.length; i++){
+
+		count1 = quoteArray[i].length;
+		if(count1 > count2){
+			count2 = count1;
+			longWordIndex = i;
+		}
+
+	}
+
+	return quoteArray[longWordIndex];
+}
+
+console.log(longestWord(topQuote));
+
+/*var topQuote = "I love dogs.";
 //console.log("topQuote length: ", topQuote.length);
 var quoteArray = [];
 var word;
@@ -259,7 +284,7 @@ function longestWord(phrase){
 
 }
 
-console.log("LongestWord: ", longestWord(topQuote));
+console.log("LongestWord: ", longestWord(topQuote));*/
 
 
 /* 12) Puppet Master
@@ -272,7 +297,7 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
 */
 
 var miscStorage = [ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ];
-console.log(miscStorage.length);
+//console.log(miscStorage.length);
 
 var newArray = [];
 
